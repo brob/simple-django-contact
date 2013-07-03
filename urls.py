@@ -1,10 +1,9 @@
 from django.conf.urls import patterns, include, url
-from contact.views import contactForm
+from .views import contactForm
 
 
 
 urlpatterns = patterns('',
-
 	url(r'^contact/$', contactForm),
 )
 
