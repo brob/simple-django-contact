@@ -5,6 +5,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = patterns('',
 	url(r'^contact/$', contactForm),
-	url(r'^contact/thanks/$', TemplateView.as_view(template_name='thanks.html'), name="thanks")
+	url(r'^contact/thanks/$', TemplateView.as_view(template_name='thanks.html'), name="thanks"),
+	url(r'^thanks/$', TemplateView.as_view(template_name='thanks.html'), name="thanks")
 )
 
