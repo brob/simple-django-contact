@@ -17,7 +17,7 @@ def contactForm(request):
 			fromEmail = form.cleaned_data['email']
 			send_mail('Email from Truck Form', message, fromEmail,
 			    ['bryanlrobinson@gmail.com'], fail_silently=False)
-			return HttpResponseRedirect('/thanks/')
+			return HttpResponseRedirect('/contact/thanks/')
 			
 	else:
 		c = {}
